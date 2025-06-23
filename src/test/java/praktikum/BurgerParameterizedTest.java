@@ -45,7 +45,7 @@ public class BurgerParameterizedTest {
     }
 
     @Test
-    public void BurgerGetPriceWithDifferentParametersTest(){
+    public void burgerGetPriceWithDifferentParametersTest(){
         Mockito.when(mockBun.getPrice()).thenReturn(bunPrice);
         Mockito.when(mockIng1.getPrice()).thenReturn(Ing1Price);
         Mockito.when(mockIng2.getPrice()).thenReturn(Ing2Price);

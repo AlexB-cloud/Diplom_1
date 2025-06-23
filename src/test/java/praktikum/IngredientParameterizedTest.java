@@ -10,7 +10,7 @@ public class IngredientParameterizedTest {
     private final IngredientType expectedType;
     private final String expectedName;
     private final float expectedPrice;
-    public IngredientParameterizedTest(IngredientType expectedType,String expectedName,float expectedPrice){
+    public IngredientParameterizedTest(IngredientType expectedType, String expectedName, float expectedPrice){
         this.expectedType=expectedType;
         this.expectedName=expectedName;
         this.expectedPrice=expectedPrice;
@@ -24,17 +24,17 @@ public class IngredientParameterizedTest {
         };
     }
     @Test
-    public void IngredientGetNameTest(){
+    public void ingredientGetNameTest(){
         Ingredient ing = new Ingredient(expectedType,expectedName,expectedPrice);
         Assert.assertEquals(expectedName, ing.getName());
     }
     @Test
-    public void IngredientGetTypeTest(){
+    public void ingredientGetTypeTest(){
         Ingredient ing = new Ingredient(expectedType,expectedName,expectedPrice);
         Assert.assertEquals(expectedType, ing.getType());
     }
     @Test
-    public void IngredientGetPriceTest(){
+    public void ingredientGetPriceTest(){
         Ingredient ing = new Ingredient(expectedType,expectedName,expectedPrice);
         Assert.assertEquals(expectedPrice, ing.getPrice(),0.001f);
     }

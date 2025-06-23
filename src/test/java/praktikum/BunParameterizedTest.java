@@ -21,12 +21,12 @@ public class BunParameterizedTest {
         };
     }
     @Test
-    public void BunGetNameTest(){
+    public void bunGetNameTest(){
         Bun testBun = new Bun(expectedName, expectedPrice);
         Assert.assertEquals(expectedName,testBun.getName());
     }
     @Test
-    public void BunGetPriceTest(){
+    public void bunGetPriceTest(){
         Bun testBun = new Bun(expectedName, expectedPrice);
         Assert.assertEquals(expectedPrice,testBun.getPrice(),0.001f);
     }

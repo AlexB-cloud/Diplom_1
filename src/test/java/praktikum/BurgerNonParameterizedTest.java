@@ -76,10 +76,13 @@ public class BurgerNonParameterizedTest {
         burger.setBuns(mockBun);
         burger.addIngredient(mockIng1);
         burger.addIngredient(mockIng2);
-        String expectedReceipt = "(==== С кунжутом ====)" + System.lineSeparator() +
-                "= sauce Кисло-сладкий =" + System.lineSeparator() +
-                "= filling Котлета =" + System.lineSeparator() +
-                "(==== С кунжутом ====)"+ System.lineSeparator()+ System.lineSeparator()+"Price: 245,000000"+ System.lineSeparator();
+        String expectedReceipt = String.format(
+                "(==== С кунжутом ====)%n" +
+                        "= sauce Кисло-сладкий =%n" +
+                        "= filling Котлета =%n" +
+                        "(==== С кунжутом ====)%n%n" +
+                        "Price: 245,000000%n"
+        );
 
         Assert.assertEquals(expectedReceipt, burger.getReceipt());
 
